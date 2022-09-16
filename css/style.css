@@ -1,0 +1,77 @@
+:root {
+    --cyan: #3CDDF3;
+    --purple: #8B48BF;
+    --dark-blue: #1E1E26;
+    --darkest-blue: #232851;
+    --light-gray: rgb(249, 249, 249);
+    --white: #fff;
+    --disabled: #7C8297;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: rgb(249, 249, 249);
+    color: var(--darkest-blue);
+}
+
+.container {
+    max-width: 1440px;
+    background-color: var(--white);
+}
+
+.navbar {
+    display: flex;
+    padding: 65px 165px;
+}
+
+.navbar-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-container {
+    width: 382px;
+}
+
+.nav-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-container li {
+    display: inline;
+    font-size: 13px;
+}
+
+button {
+    background-color: var(--light-gray);
+    color: var(--purple);
+    width: 134px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 50px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    border-style: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) ;
+    
+}
+
+button.primary {
+    background-color: var(--purple);
+    color: var(--white);
+}
