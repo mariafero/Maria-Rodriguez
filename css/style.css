@@ -210,3 +210,24 @@ button.mini {
     width: 70px;
     height: 70px;
 }
+
+.info {
+    /* height: 224px; */
+    background-color: var(--purple);
+    padding: 64px 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-body {
+    width: 438px;
+}
+
+.info-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--white);
+}
