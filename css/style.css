@@ -231,3 +231,77 @@ button.mini {
     line-height: 48px;
     color: var(--white);
 }
+
+.footer {
+    margin-top: 150px;
+}
+
+.footer-main {
+    padding: 64px 165px;
+    background-color: var(--dark-blue);
+}
+
+.footer-content {
+    display: flex;
+    /* gap: 100px; */
+    justify-content: space-between;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--disabled);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+}
+
+.footer-links {
+    width: 392.73px;
+    display: flex;
+    justify-content: space-between;
+    /* gap: 150px; */
+    /* gap: 219px; */
+    /* width: 100%; */
+    align-items: stretch;
+    color: var(--white);
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-link a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 9px;
+}
+
+.form-email {
+    width: 143px;
+    padding: 0px 15px;
+    height: 44px;
+    font-weight: 600;
+    border-radius: 50px;
+    border-style: none;
+    color: var(--disabled);
+}
