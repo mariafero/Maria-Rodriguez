@@ -74,6 +74,20 @@ button.primary {
     color: var(--white);
 }
 
+button.mini {
+    background-color: var(--light-gray);
+    color: var(--purple);
+    width: 69px;
+    padding: 10px 25px;
+    height: 44px;
+    font-weight: 700;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    background-color: var(--purple);
+    color: var(--white);
+}
+
 .home {
     align-self: center;
     width: 1129px;
@@ -130,4 +144,29 @@ button.primary {
     font-weight: 700;
     font-size: 36px;
     line-height: 41.26px;
+}
+
+.about-items {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.about-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+}
+
+.about-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 18px;
+}
+
+.about-item-text p {
+    color: var(--disabled);
 }
