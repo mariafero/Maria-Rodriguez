@@ -10,7 +10,7 @@ Sus usuarios deberían poder:
 - Uso y correcta implementación de etiquetas semánticas
 - Adaptabilidad a dos tipos de dispositivos
 - Correcta implementación del fomulario
-- Imagens, iconos, fuentes, background
+- Imágenes, iconos, fuentes, background
 - Implementación de Flexbox
 - Buenas Practicas en el CSS
 - Pseudoelementos y Pseudoclases
