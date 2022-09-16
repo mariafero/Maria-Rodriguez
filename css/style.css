@@ -24,6 +24,8 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
     max-width: 1440px;
     background-color: var(--white);
 }
@@ -63,9 +65,6 @@ button {
     height: 44px;
     padding: 10px;
     border-radius: 50px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
     border-style: none;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25) ;
     
@@ -74,4 +73,36 @@ button {
 button.primary {
     background-color: var(--purple);
     color: var(--white);
+}
+
+.home {
+    align-self: center;
+    width: 1129px;
+    /* height: 525px; */
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.home-copywriting {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 66.47px;
+    width: 439px;
+    /* height: 198px; */
+}
+
+.home-body {
+    width: 350px;
+    font-weight: 500;
+    font-size: 16.5584px;
+    font-style: normal;
+    line-height: 157.1%;
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
