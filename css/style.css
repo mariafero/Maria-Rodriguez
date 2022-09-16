@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     max-width: 1440px;
     background-color: var(--white);
+    gap: 50px;
 }
 
 .navbar {
@@ -120,19 +121,21 @@ button.mini {
     margin-bottom: 28px;
 }
 
+/* NOTE: Fix the size of about section */
+
 .about {
     align-self: center;
     width: 1129px;
     height: 525px;
     display: flex;
     justify-content: stretch;
-    align-items: center;
+    align-items: stretch;
 }
 
 .about-main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: flex-start;
     padding: 0px;
     gap: 36px;
