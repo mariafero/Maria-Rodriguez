@@ -173,3 +173,40 @@ button.mini {
 .about-item-text p {
     color: var(--disabled);
 }
+
+.testimonials {
+    width: 1298px;
+    /* height: 478px; */
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+}
+
+.testimonials header h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+}
+
+.testimonials section {
+    display: flex;
+    justify-content: stretch;
+}
+
+.testimonials section article {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    justify-content: stretch;
+    align-items: center;
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.testimonials section article img {
+    width: 70px;
+    height: 70px;
+}
