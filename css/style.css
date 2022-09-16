@@ -46,6 +46,8 @@ body {
 
 .nav-container {
     width: 382px;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .nav-container ul {
@@ -57,6 +59,10 @@ body {
 .nav-container li {
     display: inline;
     font-size: 13px;
+}
+
+.img-fluid {
+    width: 100%;
 }
 
 button {
@@ -91,7 +97,7 @@ button.mini {
 
 .home {
     align-self: center;
-    width: 1129px;
+    max-width: 1129px;
     /* height: 525px; */
     display: flex;
     justify-content: stretch;
@@ -107,7 +113,7 @@ button.mini {
     font-weight: 700;
     font-size: 58px;
     line-height: 66.47px;
-    width: 439px;
+    max-width: 439px;
     /* height: 198px; */
 }
 
@@ -125,7 +131,7 @@ button.mini {
 
 .about {
     align-self: center;
-    width: 1129px;
+    max-width: 1129px;
     height: 525px;
     display: flex;
     justify-content: stretch;
@@ -175,7 +181,7 @@ button.mini {
 }
 
 .testimonials {
-    width: 1298px;
+    max-width: 1298px;
     /* height: 478px; */
     align-self: center;
     display: flex;
@@ -264,7 +270,7 @@ button.mini {
 }
 
 .footer-links {
-    width: 392.73px;
+    max-width: 392.73px;
     display: flex;
     justify-content: space-between;
     /* gap: 150px; */
@@ -304,4 +310,32 @@ button.mini {
     border-radius: 50px;
     border-style: none;
     color: var(--disabled);
+}
+
+.hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 940px) {
+    .nav-container {
+        display: none;
+    }
+
+    .navbar-content button {
+        display: none;
+    }
+
+    .navbar-content .hamburger {
+        display: inline;
+    }
+
+    .navbar {
+        padding: 74px 10%;
+    }
+}
+
+@media only screen and (max-width: 728px) {
+    .navbar {
+        padding: 59px 36px;
+    }
 }
