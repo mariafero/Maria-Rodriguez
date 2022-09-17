@@ -416,6 +416,10 @@ button.mini {
         flex-direction: column-reverse;
     }
 
+    .home img {
+        margin-bottom: 35vh;
+    }
+
     .home-copywriting {
         margin-bottom: 20vh;
     }
