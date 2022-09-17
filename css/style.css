@@ -279,7 +279,7 @@ button.mini {
 }
 
 .footer {
-    margin-top: 150px;
+    margin-top: 20vh;
 }
 
 .footer-main {
@@ -457,6 +457,10 @@ button.mini {
     .testimonials-one {
         text-align: center;
     }
+
+    .footer {
+        margin-top: 10vh;
+    }
 }
 
 @media only screen and (max-width: 728px) {
@@ -469,5 +473,15 @@ button.mini {
     }
     .about-item-text {
         margin-left: calc(1em + 16vw);
+    }
+
+    .info {
+        flex-direction: column;
+        padding: 32px 165px;
+    }
+
+    .info-title {
+        text-align: center;
+        margin-bottom: 1em;
     }
 }
