@@ -316,6 +316,12 @@ button.mini {
     display: none;
 }
 
+@media only screen and (max-width: 1170px) {
+    .home, .about {
+        margin: 1em;
+    }
+}
+
 @media only screen and (max-width: 940px) {
     .nav-container {
         display: none;
@@ -331,6 +337,33 @@ button.mini {
 
     .navbar {
         padding: 74px 10%;
+    }
+
+    .container {
+        gap: 15%;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-main > * {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-copywriting {
+        width: 100%;
+        align-items: center;
+    }
+
+    .home-title, .home-body {
+        max-width: 90%;
+        text-align: center;
     }
 }
 
