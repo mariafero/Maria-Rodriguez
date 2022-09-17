@@ -17,6 +17,7 @@
 
 html, body {
     width: 100%;
+    overflow-x: hidden;
 }
 
 a {
@@ -332,7 +333,9 @@ button.mini {
     justify-content: space-between;
     /* gap: 150px; */
     /* gap: 219px; */
-    /* width: 100%; */
+    width: 100%;
+    margin-left: 1em;
+    margin-right: 1em;
     align-items: stretch;
     color: var(--white);
 }
@@ -501,6 +504,12 @@ button.mini {
     .footer-main {
         padding: 64px 41px;
     }
+
+    .footer-links {
+        margin-left: 2em;
+        margin-right: 2em;
+        gap: 1em;
+    }
 }
 
 @media only screen and (max-width: 728px) {
@@ -548,6 +557,12 @@ button.mini {
     .footer-content {
         flex-direction: column;
         justify-content: stretch;
+    }
+
+    .footer-links {
+        margin-left: 0;
+        margin-right: 0;
+        gap: 0;
     }
 
     .search-bar {
