@@ -1,6 +1,7 @@
 :root {
     --cyan: #3CDDF3;
     --purple: #8B48BF;
+    --light-purple: #DCC8EC;
     --dark-blue: #1E1E26;
     --darkest-blue: #232851;
     --light-gray: rgb(249, 249, 249);
@@ -132,7 +133,7 @@ button.mini {
 .about {
     align-self: center;
     max-width: 1129px;
-    height: 525px;
+    /* height: 525px; */
     display: flex;
     justify-content: stretch;
     align-items: stretch;
@@ -145,6 +146,7 @@ button.mini {
     align-items: flex-start;
     padding: 0px;
     gap: 36px;
+    margin-left: 1em;
     /* width: 433px; */
     /* height: 212px; */
 }
@@ -163,9 +165,23 @@ button.mini {
 
 .about-item {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding: 0px;
-    gap: 18px;
+    flex-direction: column;
+    /* gap: 18px; */
+    position: relative;
+}
+
+.about-item-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    /* gap: 18px; */
+}
+
+.about-item-marker {
+    width: 7vw;
 }
 
 .about-item-text {
@@ -173,11 +189,15 @@ button.mini {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 18px;
+    /* gap: 18px; */
+    margin-left: 7vw;
 }
 
 .about-item-text p {
     color: var(--disabled);
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.01em;
 }
 
 .testimonials {
@@ -317,8 +337,18 @@ button.mini {
 }
 
 @media only screen and (max-width: 1170px) {
-    .home, .about {
+    .home {
         margin: 1em;
+    }
+    .about-item-title {
+        margin-left: 1em;
+    }
+    .about-item-marker {
+        min-width: 9vw;
+    }
+    .about-item-text {
+        margin-left: calc(1em + 9vw);
+        margin-right: 1em;
     }
 }
 
@@ -347,6 +377,10 @@ button.mini {
         flex-direction: column-reverse;
     }
 
+    .home-copywriting {
+        margin-bottom: 20vh;
+    }
+
     .about {
         flex-direction: column;
     }
@@ -354,6 +388,11 @@ button.mini {
     .about-main > * {
         width: 100%;
         text-align: center;
+    }
+
+    .about-main p {
+        margin-top: 5vh;
+        margin-bottom: 20vh;
     }
 
     .home-copywriting {
@@ -365,10 +404,37 @@ button.mini {
         max-width: 90%;
         text-align: center;
     }
+
+    .about-items {
+        margin-bottom: 15vh;
+    }
+
+    .about-item-title {
+        background-color: var(--light-purple);
+        position: relative;
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+
+    .about-item-marker {
+        min-width: 10vw;
+    }
+    .about-item-text {
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        margin-left: calc(1em + 10vw);
+    }
 }
 
 @media only screen and (max-width: 728px) {
     .navbar {
         padding: 59px 36px;
+    }
+
+    .about-item-marker {
+        min-width: 16vw;
+    }
+    .about-item-text {
+        margin-left: calc(1em + 16vw);
     }
 }
