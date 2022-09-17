@@ -7,8 +7,13 @@
     --light-gray: rgb(249, 249, 249);
     --white: #fff;
     --disabled: #7C8297;
+    /* The design has this next color in the testimonials articles as background color: */
     --testimonial: #FAFAFA;
 }
+
+/**
+ *  Reset styles
+ */
 
 * {
     margin: 0;
@@ -26,7 +31,7 @@ a {
 }
 
 body {
-    background-color: rgb(249, 249, 249);
+    background-color: var(--light-gray);
     color: var(--dark-blue);
 }
 
@@ -37,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 form {
     display: block;
 }
+
+/**
+ * General purpose classes
+ */
 
 .container {
     display: flex;
@@ -94,6 +103,13 @@ button {
     border-style: none;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
+button:hover {
+    cursor: pointer;
+    filter: brightness(0.7);
+}
+button:active {
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
+}
 
 button.primary {
     background-color: var(--purple);
@@ -112,14 +128,6 @@ button.mini {
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     background-color: var(--purple);
     color: var(--white);
-}
-
-button:hover {
-    cursor: pointer;
-    filter: brightness(0.7);
-}
-button:active {
-    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.25);
 }
 
 button.primary:hover,
@@ -190,12 +198,14 @@ button.mini:hover {
     line-height: 41.26px;
 }
 
+/* This is the container of about-item */
 .about-items {
     display: flex;
     flex-direction: column;
     gap: 23px;
 }
 
+/* Each about-item */
 .about-item {
     display: flex;
     /* align-items: flex-start; */
@@ -243,10 +253,12 @@ button.mini:hover {
     /* gap: 45px; */
 }
 
+/* We can use classes as .testimonial-title, etc. But we wanted to try to this way */
+
 .testimonials header h2 {
     font-style: normal;
     font-weight: 700;
-    font-size: 39.2143px;
+    font-size: 39.2143px; /* This float-values are taken from the design */
     line-height: 156.6%;
 }
 
@@ -286,12 +298,13 @@ button.mini:hover {
     transform: scale(1.5, 1.5);
     transition: 0.5s;
 }
-
+/* This mean each testimonial */
 .testimonials-one {
     color: var(--disabled);
     text-align: center;
 }
 
+/* This is the info section */
 .info {
     /* height: 224px; */
     background-color: var(--purple);
@@ -401,7 +414,17 @@ button.mini:hover {
     display: none;
 }
 
+/**
+ * Media query section.
+ *
+ * With these we can apply some styles when some condictions are true
+ */
+
 @media only screen and (max-width: 1170px) {
+    /**
+     * Generally, here we fix some margins
+     */
+
     .home {
         margin: 1em;
     }
@@ -429,6 +452,11 @@ button.mini:hover {
 }
 
 @media only screen and (max-width: 940px) {
+    /**
+     * Here we hide some elements, show other elements
+     * and CHANGE the flex direction to other elements.
+     */
+
     .nav-container {
         display: none;
     }
@@ -437,6 +465,7 @@ button.mini:hover {
         display: none;
     }
 
+    /* Show the hamburger icon */
     .navbar-content .hamburger {
         display: inline;
     }
@@ -449,6 +478,7 @@ button.mini:hover {
         gap: 15%;
     }
 
+    /* The elements are reserved in design */
     .home {
         flex-direction: column-reverse;
     }
@@ -494,6 +524,7 @@ button.mini:hover {
         margin-bottom: 15vh;
     }
 
+    /* Put the background color to the title-like element */
     .about-item-title {
         background-color: var(--light-purple);
         position: relative;
@@ -519,6 +550,7 @@ button.mini:hover {
         display: none;
     } */
 
+    /* Shows only two testimonials */
     .testimonials > section > article:first-child {
         display: none;
     }
@@ -571,6 +603,7 @@ button.mini:hover {
         margin-bottom: 1em;
     }
 
+    /* design shows only the central testimonial, then we hide others */
     .testimonials > section > article:last-child,
     .testimonials > section > article:first-child {
         display: none;
