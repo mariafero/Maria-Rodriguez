@@ -155,6 +155,7 @@ button.mini {
     display: flex;
     justify-content: stretch;
     align-items: stretch;
+    margin-bottom: 10vh;
 }
 
 .about-main {
@@ -165,6 +166,7 @@ button.mini {
     padding: 0px;
     gap: 36px;
     margin-left: 1em;
+    margin-right: 20vh;
     /* width: 433px; */
     /* height: 212px; */
 }
@@ -385,6 +387,13 @@ button.mini {
 @media only screen and (max-width: 1170px) {
     .home {
         margin: 1em;
+    }
+
+    .about {
+        margin-bottom: 5vh;
+    }
+    .about-main {
+        margin-right: 5vh;
     }
     .about-item-title {
         margin-left: 2em;
