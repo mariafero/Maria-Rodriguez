@@ -280,6 +280,10 @@ button.mini:active {
     left: calc(50% - (70px / 2));
     top: calc(-70px/2);
 }
+.testimonials section article img:hover {
+    transform: scale(1.5, 1.5);
+    transition: 0.5s;
+}
 
 .testimonials-one {
     color: var(--disabled);
