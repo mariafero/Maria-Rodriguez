@@ -15,6 +15,10 @@
     padding: 0;
 }
 
+html, body {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -428,6 +432,11 @@ button.mini {
         flex-direction: column;
     }
 
+    .about-main {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
     .about-main > * {
         width: 100%;
         text-align: center;
@@ -460,12 +469,12 @@ button.mini {
     }
 
     .about-item-marker {
-        min-width: 10vw;
+        min-width: 15vw;
     }
     .about-item-text {
         margin-top: 1.5em;
         margin-bottom: 1em;
-        margin-left: calc(2em + 10vw);
+        margin-left: calc(2em + 15vw);
     }
 
     .testimonials header h2 {
@@ -502,26 +511,34 @@ button.mini {
     }
 
     .about-item-marker {
-        min-width: 16vw;
+        min-width: 20vw;
     }
     .about-item-text {
         /* margin-left: calc(2em + 16vw); */
         margin-left: 2em;
+        margin-right: 2em;
     }
 
     .info {
         flex-direction: column;
-        padding: 32px 165px;
+        /* padding: 32px 165px; */
+        padding: 32px 0px;
     }
 
     .info-title {
         text-align: center;
+        margin-left: 64px;
+        margin-right: 64px;
         margin-bottom: 1em;
     }
 
     .testimonials > section > article:last-child,
     .testimonials > section > article:first-child {
         display: none;
+    }
+
+    .testimonials header h2 {
+        font-size: 8vw;
     }
 
     .footer-main {
