@@ -499,7 +499,8 @@ button.mini {
         min-width: 16vw;
     }
     .about-item-text {
-        margin-left: calc(2em + 16vw);
+        /* margin-left: calc(2em + 16vw); */
+        margin-left: 2em;
     }
 
     .info {
