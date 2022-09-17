@@ -76,6 +76,10 @@ form {
     font-size: 13px;
 }
 
+.nav-container a:hover {
+    color: var(--disabled);
+}
+
 .img-fluid {
     width: 100%;
 }
