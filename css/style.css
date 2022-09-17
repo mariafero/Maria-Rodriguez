@@ -496,7 +496,9 @@ button.mini {
 
 @media only screen and (max-width: 728px) {
     .navbar {
-        padding: 59px 36px;
+        /* padding: 59px 36px; */
+        padding: 48px 36px;
+        padding-top: 59px;
     }
 
     .about-item-marker {
