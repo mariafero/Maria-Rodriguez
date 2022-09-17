@@ -29,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--darkest-blue);
 }
 
+form {
+    display: block;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -291,12 +295,18 @@ button.mini {
     display: flex;
     /* gap: 100px; */
     justify-content: space-between;
+    flex-direction: row-reverse;
 }
 
 .footer-logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 1em;
 }
 
 .footer-copyright {
@@ -336,10 +346,12 @@ button.mini {
 .search-bar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 0px;
+}
+
+.search-bar form {
     gap: 9px;
+    display: flex;
 }
 
 .form-email {
@@ -369,6 +381,10 @@ button.mini {
     .about-item-text {
         margin-left: calc(1em + 9vw);
         margin-right: 1em;
+    }
+
+    .footer-main {
+        padding: 64px 82px;
     }
 }
 
@@ -461,6 +477,10 @@ button.mini {
     .footer {
         margin-top: 10vh;
     }
+
+    .footer-main {
+        padding: 64px 41px;
+    }
 }
 
 @media only screen and (max-width: 728px) {
@@ -483,5 +503,50 @@ button.mini {
     .info-title {
         text-align: center;
         margin-bottom: 1em;
+    }
+
+    .footer-main {
+        padding: 48px 48px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: stretch;
+    }
+
+    .search-bar {
+        margin-bottom: 2em;
+    }
+
+    .search-bar form {
+        width: 100%;
+    }
+
+    .form-email {
+        width: 100%;
+    }
+
+    .footer-logo {
+        flex-direction: column-reverse;
+    }
+
+    .footer-logos {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .footer-logo img {
+        display: flex;
+        justify-content: stretch;
+        width: max-content;
+        align-self: center;
+        /* margin-top: 1em; */
+        margin-bottom: 2em;
+    }
+
+    .footer-copyright {
+        justify-content: center;
     }
 }
