@@ -234,6 +234,9 @@ button.mini {
     padding-bottom: 2em;
     margin-top: 15vh;
     background-color: var(--testimonial);
+
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .testimonials section article {
