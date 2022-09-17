@@ -373,13 +373,13 @@ button.mini {
         margin: 1em;
     }
     .about-item-title {
-        margin-left: 1em;
+        margin-left: 2em;
     }
     .about-item-marker {
         min-width: 9vw;
     }
     .about-item-text {
-        margin-left: calc(1em + 9vw);
+        margin-left: calc(2em + 9vw);
         margin-right: 1em;
     }
 
@@ -458,7 +458,7 @@ button.mini {
     .about-item-text {
         margin-top: 1.5em;
         margin-bottom: 1em;
-        margin-left: calc(1em + 10vw);
+        margin-left: calc(2em + 10vw);
     }
 
     .testimonials header h2 {
@@ -492,7 +492,7 @@ button.mini {
         min-width: 16vw;
     }
     .about-item-text {
-        margin-left: calc(1em + 16vw);
+        margin-left: calc(2em + 16vw);
     }
 
     .info {
