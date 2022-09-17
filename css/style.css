@@ -465,7 +465,11 @@ button.mini {
         margin-bottom: 5vh;
     }
 
-    .testimonials > section > article:last-child,
+    /* .testimonials > section > article:last-child,
+    .testimonials > section > article:first-child {
+        display: none;
+    } */
+
     .testimonials > section > article:first-child {
         display: none;
     }
@@ -503,6 +507,11 @@ button.mini {
     .info-title {
         text-align: center;
         margin-bottom: 1em;
+    }
+
+    .testimonials > section > article:last-child,
+    .testimonials > section > article:first-child {
+        display: none;
     }
 
     .footer-main {
